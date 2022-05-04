@@ -21,7 +21,9 @@ public class Movimentacao {
 		
 		 @Column(name = "data_hora")
 		 private LocalDateTime dataHora;
+		
 		private String descricao;
+		
 		private Double valor;
 		
 		@Enumerated(EnumType.STRING)
@@ -29,6 +31,7 @@ public class Movimentacao {
 		
 		@Column(name = "id_conta")
 		private Integer idConta;
+		
 		public Integer getId() {
 			return id;
 		}
